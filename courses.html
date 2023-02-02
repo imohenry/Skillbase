@@ -44,37 +44,51 @@
  <!-- CATALOGUE SECTION -->
         <div class="catalogue-list-container" id="BtnContainer">
             <div class="catalogue-flex">
-                <p class="top-catalogue-item cat-interactive active-course btn" onclick="filterSelection('digital-payments')">
-                    DIGITAL PAYMENTS, DATA AND FINTECH
-                </p>
-                <p class="top-catalogue-item cat-interactive btn"  onclick="filterSelection('council-security')">
-                    EC COUNCIL SECURITY 
-                </p>
-                <p class="top-catalogue-item cat-interactive btn" onclick="filterSelection('business-management')">
-                    BUSINESS MANAGEMENT 
-                </p>
-                <p class="top-catalogue-item cat-interactive btn" onclick="filterSelection('data-science')">
-                    DATA SCIENCE
-                </p>
+                <a href="#digital">
+                    <p class="top-catalogue-item cat-interactive active-course btn" onclick="filterSelection('digital-payments')" >
+                        DIGITAL PAYMENTS, DATA AND FINTECH
+                    </p>
+                </a>
+                <a href="#council">
+                    <p class="top-catalogue-item cat-interactive btn"  onclick="filterSelection('council-security')">
+                        EC COUNCIL SECURITY 
+                    </p>
+                </a>
+                <a href="#business">
+                    <p class="top-catalogue-item cat-interactive btn" onclick="filterSelection('business-management')">
+                        BUSINESS MANAGEMENT 
+                    </p>
+                </a>
+                <a href="#data-science">
+                    <p class="top-catalogue-item cat-interactive btn" onclick="filterSelection('data-science')">
+                        DATA SCIENCE
+                    </p>
+                </a>
             </div>
 
             <div class="catalogue-flex">
-                <p class="bottom-catalogue-item cat-interactive btn" onclick="filterSelection('product-operations')">
-                    INTERSWITCH PRODUCT OPERATIONS
-                </p>
-                <p class="bottom-catalogue-item cat-interactive btn" onclick="filterSelection('information-technology')">
-                    INFORMATION TECHNOLOGY & CHANNELS
-                </p>
-                <p class="bottom-catalogue-item cat-interactive btn" onclick="filterSelection('cyber-security')">
-                    CYBER SECURITY, RISK AND COMPLIANCE
-                </p>
+                <a href="#product">
+                    <p class="bottom-catalogue-item cat-interactive btn" onclick="filterSelection('product-operations')">
+                        INTERSWITCH PRODUCT OPERATIONS
+                    </p>
+                </a>
+                <a href="#info-tech">
+                    <p class="bottom-catalogue-item cat-interactive btn" onclick="filterSelection('information-technology')">
+                        INFORMATION TECHNOLOGY & CHANNELS
+                    </p>
+                </a>
+                <a href="#cyber">
+                    <p class="bottom-catalogue-item cat-interactive btn" onclick="filterSelection('cyber-security')">
+                        CYBER SECURITY, RISK AND COMPLIANCE
+                    </p>
+                </a>
             
             </div>
         </div>
        </section>
 
        
-        <section class="container filterDiv digital-payments">
+        <section class="container filterDiv digital-payments" id="digital">
             <div class="popular-courses-text heading-width">
                 <p class="popular-courses-main_heading">
                     Digital Payments, Data and Fintech Courses
@@ -167,7 +181,7 @@
 
 
         <!-- EC council security courses -->
-        <section class="container filterDiv council-security">
+        <section class="container filterDiv council-security" id="council">
             <div class="popular-courses-text heading-width">
                 <p class="popular-courses-main_heading">
                     EC Council Security Courses
@@ -273,7 +287,7 @@
         </section>
 
         <!-- Business Management Courses -->
-        <section class="container filterDiv business-management">
+        <section class="container filterDiv business-management" id="business">
             <div class="popular-courses-text heading width">
                 <p class="popular-courses-main_heading">
                     Business Management Courses
@@ -314,7 +328,7 @@
         </section>
 
          <!-- Data Science Courses -->
-         <section class="container filterDiv data-science">
+         <section class="container filterDiv data-science" id="data-science">
             <div class="popular-courses-text heading-width">
                 <p class="popular-courses-main_heading">
                     Data Science Courses
@@ -367,7 +381,7 @@
 
 
         <!-- Interswitch Product Operation Courses -->
-        <section class="container filterDiv product-operations">
+        <section class="container filterDiv product-operations" id="isw-product">
             <div class="popular-courses-text heading-width">
                 <p class="popular-courses-main_heading">
                     Interswitch Product Operation Courses
@@ -492,7 +506,7 @@
 
 
         <!-- Information Technology & Channels Courses -->
-        <section class="container filterDiv information-technology">
+        <section class="container filterDiv information-technology" id="info-tech">
             <div class="popular-courses-text heading-width">
                 <p class="popular-courses-main_heading">
                     Information Technology & Channels Courses
@@ -624,7 +638,7 @@
 
 
         <!--   Cyber Security, Risk & Compliance Courses-->
-        <section class="container filterDiv cyber-security">
+        <section class="container filterDiv cyber-security" id="cyber">
             <div class="popular-courses-text heading-width">
                 <p class="popular-courses-main_heading">
                     Cyber Security, Risk & Compliance Courses
