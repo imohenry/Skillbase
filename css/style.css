@@ -527,7 +527,7 @@ Popular courses section
 
 .popular-courses-cards {
     display: flex;
-    justify-content: space-around;;
+    justify-content: flex-start
     padding-top: 76px;
     width: auto;
 }
