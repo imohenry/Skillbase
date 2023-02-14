@@ -268,8 +268,8 @@
   .hero-text h1 {
     font-style: normal;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 64px;
+    font-size: 40px;
+    line-height: 48px;
     font-family: "Averta" !important;
     text-align: center;
     color: #00425F;
@@ -279,8 +279,8 @@
   .header-paragraph {
     text-align: center;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 24px;
     color:  #374151;;
     padding-top: 24px;
   }
@@ -311,7 +311,7 @@
 }
 .slider-wrapper {
     background-color: #fff;
-    height: 25vh;
+    /* height: 25vh; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -320,6 +320,7 @@
   .main-carousel {
     position: relative;
     overflow: hidden;
+    height: 350px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -540,7 +541,7 @@ Popular courses section
 
 .card {
     width: 260px;
-   height: 345px;
+   height: 320px;
    display: flex;
    align-items: flex-end;
     /* flex: 1; */
@@ -1026,16 +1027,16 @@ Catalogue section
 
 .catalogue-main_heading {
     font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 32px;
+    line-height: 40px;
     text-align: center;
     color: #00425F;
 }
 
 .catalogue-sub_heading {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 24px;
     text-align: center;
     padding-top: 8px;
     color: #374151;
@@ -1081,27 +1082,28 @@ Talent section
     border-radius: 32px;    
 }
 
+.talent-text {
+    max-width: 852px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin: 0 auto;
+}
 
 .talent-main_heading {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 48px;
     text-align: center;
     text-transform: capitalize;
     color: #00425F;
-}
-
-.talent-text {
-    max-width: 852px;
-    padding-top: 100px;
-    padding-bottom: 64px;
+    width: 600px;
     margin: 0 auto;
 }
 
 .talent-sub_heading {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 24px;
     text-align: center;
     color: #6B7280;
     padding-top: 20px;
@@ -2088,6 +2090,7 @@ Footer style
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 25px;
 }
 
 .footer-big-flex {
@@ -2230,6 +2233,10 @@ Footer style
 
 .deals-paddle svg {
     width: 10px;
+}
+
+.talent-main_heading {
+    width: auto;
 }
 
 @media (min-width: 768px) {
@@ -2378,6 +2385,10 @@ RESPONSIVE STYLING
     justify-content: space-around;
 }
 
+.course-details-flex {
+    flex-direction: column;
+}
+
 
 }
 
@@ -2435,6 +2446,15 @@ RESPONSIVE STYLING
     .community-text {
         padding: 33px 10px;
 
+    }
+
+    .footer-big-flex {
+        align-items: center;
+    }
+
+    .footer {
+        text-align: center;
+        justify-content: center;
     }
 
 }
