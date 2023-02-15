@@ -158,7 +158,7 @@
   .container {
     max-width: 1280px !important;
     margin: 0 auto !important;
-    padding: 80px;
+    padding: 2.5rem;
   }
   
   /* ===============================
@@ -404,7 +404,7 @@
     }
     2%, 16.6666666667% {
       transform: translateX(-100%);
-      opacity: 0.4;
+      opacity: 1;
     }
     18.6666666667%, 33.3333333333% {
       transform: translateX(0);
@@ -412,7 +412,7 @@
     }
     35.3333333333%, 50% {
       transform: translateX(100%);
-      opacity: 0.4;
+      opacity: 1;
     }
     52% {
       transform: translateX(200%);
@@ -431,7 +431,7 @@
     }
     2%, 16.6666666667% {
       transform: translateX(-100%);
-      opacity: 0.4;
+      opacity: 1;
     }
     18.6666666667%, 33.3333333333% {
       transform: translateX(0);
@@ -439,7 +439,7 @@
     }
     35.3333333333%, 50% {
       transform: translateX(100%);
-      opacity: 0.4;
+      opacity: 1;
     }
     52% {
       transform: translateX(200%);
@@ -456,7 +456,7 @@ Digital companies section
 =========================*/
 
 .digital-companies-heading {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
     line-height: 32px;
     text-align: center;
@@ -484,7 +484,7 @@ Digital companies section
   }
   
   .bank-slider {
-    margin-top: 70px;
+    /* margin-top: 70px; */
     /* background-color: whitesmoke; */
     padding: 15px 2em;
   }
@@ -1084,7 +1084,7 @@ Talent section
 
 .talent-text {
     max-width: 852px;
-    padding-top: 64px;
+    padding-top: 40px;
     padding-bottom: 64px;
     margin: 0 auto;
 }
@@ -1098,6 +1098,7 @@ Talent section
     color: #00425F;
     width: 600px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .talent-sub_heading {
@@ -2235,9 +2236,6 @@ Footer style
     width: 10px;
 }
 
-.talent-main_heading {
-    width: auto;
-}
 
 @media (min-width: 768px) {
     .other-game-button {
@@ -2360,6 +2358,9 @@ RESPONSIVE STYLING
     .logo {
         margin-left: 11px;
     }
+    .talent-main_heading {
+        width: auto;
+    }
 }
 
 @media (max-width: 771px) {
@@ -2444,19 +2445,32 @@ RESPONSIVE STYLING
     }
 
     .community-text {
-        padding: 33px 10px;
+        padding: 32px 48px;
 
     }
 
     .footer-big-flex {
-        align-items: center;
+        /* align-items: center; */
     }
 
     .footer {
+        /* justify-content: center; */
+    }
+
+}
+
+@media (min-width: 420px) and (max-width: 460px) {
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
         text-align: center;
         justify-content: center;
     }
-
+    .footer-big-flex {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }    
 }
 
 @media (max-width: 419px){
