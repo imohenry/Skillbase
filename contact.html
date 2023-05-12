@@ -10,19 +10,22 @@
    <link href="https://mufasa.interswitchng.com/p/favicons/favicon_isw.png" rel="shortcut icon" type="image/png">
 </head>
 <body>
+    
 
-    <!-- Background image -->
+    <!-- COURSE MAIN HEADING  -->
+<div class="contact-banner">
+
     <nav class="nav-container">
         <div class="top-nav">
             <div class="logo">
-                <a href="#" > <img src="images/logo.svg"> </a> 
+                <a href="index.html" > <img src="images/logo.svg"> </a> 
             </div>
             <input id="menu-toggle" type="checkbox" />
             <label class='menu-button-container' for="menu-toggle">
             <div class='menu-button'></div>
             </label>
 
-            <ul class="menu">
+            <ul class="menu aux-menu-contact">
                 <li class="nav-item"><a href="courses.html"> Courses </a></li>
                 <li class="nav-item"><a href="resources.html"> Resources </a></li>
                 <li class="talk-btn nav-item"> <a href="contact.html"> Talk to us </a></li>
@@ -31,8 +34,6 @@
         </div>
     </nav>
 
-    <!-- COURSE MAIN HEADING  -->
-<section class="container">
     <div class="cdpe_heading">
         <p class="cdpe-main_heading">
             Contact Us.
@@ -43,9 +44,89 @@
             From payment processing to digital currency, we have a course to fit your needs. Sign up for a course today!
         </p>
     </div>
-</section>
 
-<section class="container">
+    <div class="form_and_info_flex">
+        <section class="grid_container">
+          <div class="row form-position" >
+              <div class="">
+                  <div class="form-area">
+                      <div class="form-inner">
+                          <form action="post">
+                              <div class="form-group">
+                               <span class="input_placeholder">Full Name <span class="required_symbol"></span></span>
+                                  <input type="text" class="form-control"  value="" required/>
+                              </div>
+                              <div class="form-group">
+                                  <span class="input_placeholder">Email Address<span class="required_symbol"></span></span>
+                                  <input type="text" class="form-control" name="name" required/>
+                              </div>
+                              <div class="form-group">
+                                  <span class="input_placeholder">Phone Number <span class="optional"></span></span>
+                                  <input class="form-control tel" type="tel" name="leyka_donor_phone" inputmode="tel" value=""/>
+                              </div>
+                          
+                              <div class="form-group">
+                                  <span class="input_placeholder">How can we help you?</span>
+                                  <textarea name="message" id="" cols="30" rows="6" class="form-message-control"></textarea>
+                              </div>
+                              <button type="submit" class="contact-form-btn form-submit">Submit</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+        
+        <!-- VERVE CONTACT INFORMATION -->
+  
+        <section class="grid_container p-main">
+          <div class="contact-info">
+  
+              <div class="contact-info-flex">
+                  <div class="contact-info-item">
+                     <p class="contact-item-head">Email</p>
+              
+                      <p class="contact-info_small-text">
+                          <a href="mailto:skill_base@interswitchgroup.com">  
+                            skill_base@interswitchgroup.com
+                          </a>
+                      </p>
+  
+                  </div>
+  
+                  <div class="contact-info-item">
+                       <p class="contact-item-head">Phone</p> 
+                  
+                      <p class="contact-info_small-text">
+                          <a href="tel:+2348033302743">
+                           
+                            +2348033302743 
+                          </a> <br><br>
+                         
+                          <a href="tel:+2349023304957">
+                            +2349023304957
+                          </a>
+                      </p>
+                  </div>
+  
+                  <!-- <div class="contact-info-item">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <p class="contact-info_big-text">
+                         Location
+                      </p>
+                      <p class="contact-info_small-text">
+                          15B Oko-Awo Street, Victoria Island Lagos.
+                      </p>
+  
+                  </div> -->
+              </div>
+          </div>
+        </section>
+  </div>
+
+</div>
+
+<section class="container contact-pad">
     <div class="cdpe_heading">
         <p class="cdpe-main_heading">
             Frequently Asked Questions
@@ -245,74 +326,85 @@
     </div>
 </section>
 
-<!-- FOOTER SECTION -->
-<section class="container">
+    <!-- FOOTER SECTION -->
+    <section class="container">
 
-    <div class="footer-big-flex">
-        <div class="footer-logo">
-            <img src="images/logo.svg" alt="" class="logo">
+        <div class="footer-big-flex">
+            <div class="footer-logo">
+                <img src="images/logo.svg" alt="" class="logo">
+            </div>
+            <div class="footer">
+                <div class="footer-section">
+                    <p class="footer-section_heading">
+                        Courses
+                    </p>
+                    <a href="courses.html#digital">
+                        <p class="footer-item skillbase-footer-hover">
+                                Digital Transformation
+                        </p>
+                    </a>
+                    <a href="courses.html">
+                        <p class="footer-item skillbase-footer-hover">
+                            Payment & Fintech
+                        </p>
+                    </a>
+
+                    <a href="courses.html#product">
+                        <p class="footer-item skillbase-footer-hover">
+                            Interswitch Pay Solutions
+                        </p>
+                    </a>
+                    <a href="courses.html#data-science">
+                        <p class="footer-item skillbase-footer-hover">
+                            Data Science
+                        </p>
+                    </a>
+                    <a href="courses.html#business">
+                        <p class="footer-item skillbase-footer-hover">
+                            Business Management
+                        </p>
+                    </a>
+                    <a href="courses.html#council">
+                        <p class="footer-item skillbase-footer-hover">
+                            EC Council Courses
+                        </p>
+                    </a>
+                </div>
+
+                <!-- <div class="footer-section">
+                    <p class="footer-section_heading">
+                        Resources
+                    </p>
+                    <p class="footer-item">
+                        Upcoming Webinar
+                    </p>
+                    <p class="footer-item">
+                        Articles & Insights
+                    </p>
+
+                    <p class="footer-item">
+                        Academic Calendar
+                    </p>
+                </div> -->
+
+                <div class="footer-section">
+                    <p class="footer-section_heading">
+                        Contact
+                    </p>
+                    <a href="mailto:skill_base@interswitchgroup.com">
+                    <p class="footer-item skillbase-footer-hover">
+                        skill_base@interswitchgroup.com
+                    </p>
+                    </a>
+                    <p class="footer-item">
+                       <a href="tel:+2348033302743" class="skillbase-tel">+2348033302743</a>  <br>
+                       <a href="tel:+2349023304957" class="skillbase-tel">+2349023304957</a>
+                    </p>
+                </div>
+
+            </div>
         </div>
-        <div class="footer">
-            <div class="footer-section">
-                <p class="footer-section_heading">
-                    Courses
-                </p>
-                <p class="footer-item">
-                    Digital Transformation
-                </p>
-                <p class="footer-item">
-                    Payment & Fintech
-                </p>
-
-                <p class="footer-item">
-                    Interswitch Pay Solutions
-                </p>
-
-                <p class="footer-item">
-                    Data Science
-                </p>
-
-                <p class="footer-item">
-                    Business Management
-                </p>
-
-                <p class="footer-item">
-                    EC Council Courses
-                </p>
-            </div>
-
-            <div class="footer-section">
-                <p class="footer-section_heading">
-                    Resources
-                </p>
-                <p class="footer-item">
-                    Upcoming Webinar
-                </p>
-                <p class="footer-item">
-                    Articles & Insights
-                </p>
-
-                <p class="footer-item">
-                    Academic Calendar
-                </p>
-            </div>
-
-            <div class="footer-section">
-                <p class="footer-section_heading">
-                    Contact
-                </p>
-                <p class="footer-item">
-                    skill_base@interswitchgroup.com
-                </p>
-                <p class="footer-item">
-                    +2348033302743 <br>
-                    +2349023304957
-                </p>
-            </div>
-
-        </div>
-    </div>
-</section>
+    </section>
 
 <script src="js/contact-accordion.js"></script>
 </body>

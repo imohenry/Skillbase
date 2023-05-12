@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interswitch Skillbase</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/01d9c16713.js" crossorigin="anonymous"></script>
 
@@ -14,13 +14,15 @@
     <link href="https://mufasa.interswitchng.com/p/favicons/favicon_isw.png" rel="shortcut icon" type="image/png">
 
 </head>
+
+
 <body>
 
     <!-- NavBar -->
     <nav class="nav-container">
         <div class="top-nav">
             <div class="logo">
-                <a href="index.html" > <img src="images/logo.svg"> </a> 
+                <a href="index.html" > <img src="../images/logo.svg"> </a> 
             </div>
             <input id="menu-toggle" type="checkbox" />
             <label class='menu-button-container' for="menu-toggle">
@@ -28,9 +30,9 @@
             </label>
 
             <ul class="menu">
-                <li class="nav-item"><a href="courses.html"> Courses </a></li>
+                <li class="nav-item"><a href="../courses.html"> Courses </a></li>
                 <li class="nav-item"><a href="resources.html"> Resources </a></li>
-                <li class="talk-btn nav-item"> <a href="contact.html"> Talk to us </a></li>
+                <li class="talk-btn nav-item"> <a href="../contact.html"> Talk to us </a></li>
                 <!-- <li class="nav-item"><i class="bi bi-search"></i></li> -->
             </ul>
         </div>
@@ -46,7 +48,7 @@
         </div>
 
         <p class="cdpe-main_heading">
-            Certified Digital Payments Expert (CDPE)
+            Business Analysis Fundamentals
         </p>
 
         <p class="cdpe-sub_heading">
@@ -61,8 +63,8 @@
 
         <!-- COURSE TABLE OF CONTENT -->
         <div class="course-contents">
-            <p class="course-contents_heading">
-                Certified Digital Payments Expert
+            <p class="course-contents_heading other-course-contents_heading">
+                Business Analysis Fundamentals
             </p>
 
             <p class="course-content-item up-pad">
@@ -86,32 +88,33 @@
             </p>
 
             <button class="register-btn" onclick ="openForm()">
-                Register Now
+                    Register Now
             </button>
 
-                <!-- POPUP form -->
-                <div class="loginPopup">
+            <!-- POPUP form -->
+            <div class="loginPopup">
                 <div class="formPopup" id="popupForm" style="display: none;">
                     <form action="" class="formContainer">
                     <button type="button" class="apple-store btn cancel" onclick="closeForm()">x</button>
                     <h2 class="pop-heading">Course Registration</h2>
+                    <div class="form-handle">
                     <div class="form-group">
                         <span class="input_placeholder">First Name <span class="required_symbol"></span></span>
-                            <input type="text" class="form-control"  value="" required/>
-                        </div>
-                        <div class="form-group">
-                            <span class="input_placeholder">Last Name<span class="required_symbol"></span></span>
-                            <input type="text" class="form-control" name="name" required/>
-                        </div>
-                        <div class="form-group">
+                           <input type="text" class="form-control"  value="" required/>
+                       </div>
+                       <div class="form-group">
+                           <span class="input_placeholder">Last Name<span class="required_symbol"></span></span>
+                           <input type="text" class="form-control" name="name" required/>
+                       </div>
+                       <div class="form-group">
                             <span class="input_placeholder">Email Address<span class="required_symbol"></span></span>
                             <input type="text" class="form-control" name="name" required/>
                         </div>
-                        <div class="form-group">
-                            <span class="input_placeholder">Phone Number <span class="optional"></span></span>
-                            <input class="form-control tel" type="number" value=""/>
-                        </div>
-                        <div class="form-group">
+                       <div class="form-group">
+                           <span class="input_placeholder">Phone Number <span class="optional"></span></span>
+                           <input class="form-control tel" type="number" value=""/>
+                       </div>
+                       <div class="form-group">
                             <span class="input_placeholder">Gender <span class="optional"></span></span>
                             <input class="form-control tel" type="text" value=""/>
                         </div>
@@ -132,13 +135,15 @@
 
                         <div class="form-group">
                             <span class="input_placeholder">Course title <span class="optional"></span></span>
-                            <input class="form-control c-title" type="text" value="Certified Digital Payments Expert" readonly/>
+                            <input class="form-control tel" type="text" value="BUSINESS ANALYSIS FUNDAMENTALS" readonly/>
                         </div>
-                    
-                        <button type="submit" class="contact-form-btn form-submit">Submit</button>
+                   
+                       <button type="submit" class="contact-form-btn form-submit">Submit</button>
+                       </div>
                     </form>
                 </div>
             </div>
+            
         </div> 
 
         <!-- ABOUT THE COURSE -->
@@ -149,15 +154,13 @@
                 </p>
 
                 <p class="about-course-paragraph">
-                    Today, knowledge on digital payments, its technologies and operations provide immediate insight into consumer patterns and experience, 
-                    speeding your ability to come up with the right strategy required to make the precise decisions, 
-                    define appropriate digital product enhancements and stay ahead of competition.
+                    This course trains participants to help business clients articulate their needs and wants, and to document them clearly, concisely, and completely. 
+                    By grasping this core Business Analyst (BA) skill, BAs can contribute significantly to successful projects and the products they create.
                 </p>
 
                 <p class="about-course-paragraph">
-                    In this course, you will have the opportunity to learn everything on digital payments from industry and subject matter experts.
-                    This course covers the fundamentals payment architecture, platform, their operations, switching and communications protocols used for recognizing transactions, 
-                    and how the worlds of FinTech and new technologies such as Tokenization and Blockchain provides a new outlook in payments
+                    Through a realistic case study and interviews, participants discover and then practice writing “good” requirements. The course also explores and lets attendees practice a simple process for validating and verifying requirements to ensure they are well-documented. 
+                    Also, attendees learn the importance of traceability and how to construct a traceability matrix.
                 </p>
             </div>
 
@@ -167,36 +170,49 @@
                     Who is the Course for
                 </p>
 
-                <ul class="about-course-list">
+                <p class="about-course-paragraph">
+                    People that have project experience working with a variety of roles (BA, QA, PM, sponsors) but have not had formal BA training. New business analysts (transferred from the business, or from a different IT job) and have had some formal BA training will also benefit. 
+                    Experienced BAs and project managers who want a more formal and industry-standard business analysis approach will gain new skills and methods from this course.
+                </p>
+
+                <!-- <ul class="about-course-list">
                     <li class="about-course-list-child">
                         <i class="bi bi-check-lg"></i> 
-                        Anybody needing a deep dive into Payments, Operations and EMV.
+                        Administering databases
                     </li>
                     <li class="about-course-list-child">
                         <i class="bi bi-check-lg"></i> 
-                        Business, IT, Engineering and Technical Departments
+                        Designing logical database schema solutions
                     </li>
 
                     <li class="about-course-list-child">
                         <i class="bi bi-check-lg"></i> 
-                        Operations Executives.
+                        Defining high-availability solutions
                     </li>
 
                     <li class="about-course-list-child">
                         <i class="bi bi-check-lg"></i> 
-                        Developers and Manufacturers of Cards, Terminals and Payment Systems
+                        Automating administrative tasks
                     </li>
 
                     <li class="about-course-list-child">
                         <i class="bi bi-check-lg"></i> 
-                        Product Development and Product Marketing Executives
+                        Defining security solutions
                     </li>
 
                     <li class="about-course-list-child">
                         <i class="bi bi-check-lg"></i> 
-                        Anybody needing a deep dive into the upcoming standards for further Security
+                        Monitoring and troubleshooting the database server
                     </li>
-                </ul>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Designing and executing deployments
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining the infrastructure (storage, hardware, and number of servers or instances, etc.)
+                    </li>
+                </ul> -->
             </div>
 
 
@@ -210,11 +226,11 @@
 
                 <div class="accordion-body">
                     <div class="accordion">
-                        <!-- Day 1 -->
+                        <!-- Module 1 -->
                       <div class="drop-container">
                         <div class="label">
                             <p class="course-contents_heading days-flex">
-                                Day 1: Payments Masterclass
+                                Session 1: Requirements Foundation
                                 <i class="fa-solid fa-chevron-down"></i>
                             </p>
                         </div>
@@ -222,45 +238,33 @@
                             <ul class="about-course-list list-alt-pad">
                                 <li class="about-course-list-child child-pad">
                                 <i class="bi bi-circle"></i>
-                                Introduction to Payment
+                                Business Analysis Overview
                                 </li>
-                                <li class="about-course-list-child child-pad">
-                                <i class="bi bi-circle"></i>
-                                Payment concepts
-                                </li>
-        
-                                <li class="about-course-list-child child-pad">
-                                <i class="bi bi-circle"></i>
-                                Traditional and new payment methods
-                                </li>
-        
-                                <li class="about-course-list-child child-pad">
-                                <i class="bi bi-circle"></i>
-                                Key players in the Payments ecosystem
-                                </li>
-        
-                                <li class="about-course-list-child child-pad">
-                                <i class="bi bi-circle"></i>
-                                Payment Platforms & Architecture
-                                </li>
-        
-                                <li class="about-course-list-child child-pad">
-                                <i class="bi bi-circle"></i>
-                                Practical Case Study
-                                </li>
-        
                                 <li class="about-course-list-child child-pad">
                                     <i class="bi bi-circle"></i>
-                                    Assessment
+                                    Requirements Defined
                                 </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Business Rules
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    COTS Considerations
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Requirements approaches
+                                </li>
+                                
                             </ul>
                         </div>
                       </div>
-
+                      <!-- Module 2 -->
                       <div class="drop-container">
                         <div class="label">
                             <p class="course-contents_heading days-flex">
-                                Day 2: EMV Basics, Payment Card Networks & Operations
+                                Session 2: Define the Business Need
                                 <i class="fa-solid fa-chevron-down"></i>
                             </p>
                         </div>
@@ -268,46 +272,21 @@
                         <ul class="about-course-list list-alt-pad">
                             <li class="about-course-list-child child-pad">
                               <i class="bi bi-circle"></i>
-                              EMV Chip Technology
+                              Understanding the business need
                             </li>
-                            <li class="about-course-list-child child-pad">
-                              <i class="bi bi-circle"></i>
-                              EMV Terms and concepts
-                            </li>
-        
-                            <li class="about-course-list-child child-pad">
-                              <i class="bi bi-circle"></i>
-                              EMVCo Standards & Specifications
-                            </li>
-        
-                            <li class="about-course-list-child child-pad">
-                              <i class="bi bi-circle"></i>
-                              Switching and Communications Protocols
-                            </li>
-        
-                            <li class="about-course-list-child child-pad">
-                              <i class="bi bi-circle"></i>
-                              Transaction Integrity
-                            </li>
-        
-                            <li class="about-course-list-child child-pad">
-                              <i class="bi bi-circle"></i>
-                              Practical Case Study
-                            </li>
-        
                             <li class="about-course-list-child child-pad">
                                 <i class="bi bi-circle"></i>
-                                Assessment
-                              </li>
+                                Defining business requirements
+                            </li>
                         </ul>
                         </div>
                       </div>
 
-                      <!-- Day 3 & 4 -->
+                      <!-- Module 3 -->
                       <div class="drop-container">
                         <div class="label">
                             <p class="course-contents_heading days-flex">
-                                Day 3 & 4: Achieving Back Office Excellence in Digital Payments
+                                Session 3: Plan for Requirements
                                 <i class="fa-solid fa-chevron-down"></i>
                             </p>
                         </div>
@@ -315,85 +294,33 @@
                             <ul class="about-course-list list-alt-pad">
                                 <li class="about-course-list-child child-pad">
                                   <i class="bi bi-circle"></i>
-                                  EFT Overview
-                                </li>
-                                <li class="about-course-list-child child-pad">
-                                  <i class="bi bi-circle"></i>
-                                  Card Scheme Operations
-                                </li>
-            
-                                <li class="about-course-list-child child-pad">
-                                  <i class="bi bi-circle"></i>
-                                  Card Production & Card Mgt
-                                </li>
-            
-                                <li class="about-course-list-child child-pad">
-                                  <i class="bi bi-circle"></i>
-                                  Transaction Settlement
-                                </li>
-            
-                                <li class="about-course-list-child child-pad">
-                                  <i class="bi bi-circle"></i>
-                                  Transaction Reporting
-                                </li>
-            
-                                <li class="about-course-list-child child-pad">
-                                  <i class="bi bi-circle"></i>
-                                  Responsibilities at Reconciliation
-                                </li>
-            
-                                <li class="about-course-list-child child-pad">
-                                    <i class="bi bi-circle"></i>
-                                    Settlement Bank vs Settlement Report
+                                  BA planning activities
                                 </li>
                                 <li class="about-course-list-child child-pad">
                                     <i class="bi bi-circle"></i>
-                                    Settlement Report vs Transaction Details
+                                    Understanding project context
                                 </li>
-            
                                 <li class="about-course-list-child child-pad">
                                     <i class="bi bi-circle"></i>
-                                    Transaction Details vs Internal Account
+                                    Define solution scope
                                 </li>
-            
                                 <li class="about-course-list-child child-pad">
                                     <i class="bi bi-circle"></i>
-                                    Interswitch Network Dispute Management
+                                    Identifying stakeholders
                                 </li>
-            
                                 <li class="about-course-list-child child-pad">
                                     <i class="bi bi-circle"></i>
-                                    Card Holder Disputes and Chargebacks
-                                </li>
-            
-                                <li class="about-course-list-child child-pad">
-                                    <i class="bi bi-circle"></i>
-                                    Arbitration
-                                </li>
-            
-                                <li class="about-course-list-child child-pad">
-                                    <i class="bi bi-circle"></i>
-                                    Complaint Handling via the Help Portal
-                                </li>
-            
-                                <li class="about-course-list-child child-pad">
-                                    <i class="bi bi-circle"></i>
-                                    Practical Case Study
-                                </li>
-            
-                                <li class="about-course-list-child child-pad">
-                                    <i class="bi bi-circle"></i>
-                                    Assessment
+                                    Communicating with Stakeholders
                                 </li>
                             </ul> 
                         </div>
                       </div>
 
-                      <!-- Day 5 -->
+                      <!-- Module 4 -->
                       <div class="drop-container">
                         <div class="label">
                             <p class="course-contents_heading days-flex">
-                                Day 5: Fraud Detection & Prevention in Electronic Payments
+                                Session 4: Eliciting requirements
                                 <i class="fa-solid fa-chevron-down"></i>
                             </p>
                         </div>
@@ -401,36 +328,29 @@
                             <ul class="about-course-list list-alt-pad">
                                 <li class="about-course-list-child child-pad">
                                   <i class="bi bi-circle"></i>
-                                  Detecting Fraud in payments, Security technologies
+                                  Elicitation defined
                                 </li>
                                 <li class="about-course-list-child child-pad">
-                                  <i class="bi bi-circle"></i>
-                                  Card Present Fraud Types
+                                    <i class="bi bi-circle"></i>
+                                    Common elicitation challenges
                                 </li>
-            
                                 <li class="about-course-list-child child-pad">
-                                  <i class="bi bi-circle"></i>
-                                  Investigating Card Present Fraud transactions
+                                    <i class="bi bi-circle"></i>
+                                    Prepare for elicitation
                                 </li>
-            
                                 <li class="about-course-list-child child-pad">
-                                  <i class="bi bi-circle"></i>
-                                  Practical Case Study
-                                </li>
-            
-                                <li class="about-course-list-child child-pad">
-                                  <i class="bi bi-circle"></i>
-                                  Assessment
+                                    <i class="bi bi-circle"></i>
+                                    Conduct elicitation and document results
                                 </li>
                             </ul>
                         </div>
                       </div>
 
-                      <!-- Day 6 -->
+                      <!-- Module 5 -->
                       <div class="drop-container">
                         <div class="label">
                             <p class="course-contents_heading days-flex">
-                                Day 6: Payments Security
+                                Session 5: Document and Analyze Requirements
                                 <i class="fa-solid fa-chevron-down"></i>
                             </p>
                         </div>
@@ -438,41 +358,107 @@
                             <ul class="about-course-list list-alt-pad">
                                 <li class="about-course-list-child child-pad">
                                     <i class="bi bi-circle"></i>
-                                    Security technologies
+                                    Requirements analysis tasks
                                 </li>
                                 <li class="about-course-list-child child-pad">
                                     <i class="bi bi-circle"></i>
-                                    Payments Network Security Components
+                                    Documenting requirements
                                 </li>
-            
                                 <li class="about-course-list-child child-pad">
                                     <i class="bi bi-circle"></i>
-                                    Security and Key Management
+                                    Define assumptions & constraints
                                 </li>
-            
                                 <li class="about-course-list-child child-pad">
                                     <i class="bi bi-circle"></i>
-                                    Malware Management
+                                    Organize & trace requirements
                                 </li>
-            
                                 <li class="about-course-list-child child-pad">
                                     <i class="bi bi-circle"></i>
-                                    Payments Network Security Best Practices
+                                    Prioritizing requirements
                                 </li>
-            
                                 <li class="about-course-list-child child-pad">
                                     <i class="bi bi-circle"></i>
-                                    Practical Case Study
-                                </li>
-            
-                                <li class="about-course-list-child child-pad">
-                                    <i class="bi bi-circle"></i>
-                                    Assessment
+                                    Validate & verify requirements
                                 </li>
                             </ul>
                         </div>
                       </div>
 
+                    <!-- Module 6 -->
+                    <div class="drop-container">
+                    <div class="label">
+                        <p class="course-contents_heading days-flex">
+                            Session 6: Model Requirements                           
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </p>
+                    </div>
+                    <div class="content">
+                        <ul class="about-course-list list-alt-pad">
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                What is a model?
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Benefits of modeling
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Modeling guidelines
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Current solution modeling
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Business Process Models
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Data Models
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Use Case Models
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Interface Models/Prototypes
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+
+                    <!-- Module 7 -->
+                    <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Session 7: Manage & Communicate Requirements
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Requirements management & communication tasks
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Creating a requirements package
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Requirements reviews
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Managing requirements
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
                
                     </div>
                     </div>
@@ -492,27 +478,27 @@
                 </p>
 
                 <ul class="about-course-list">
-                    <li class="about-course-list-child">
+                    <li class="about-course-list-child about-course-list-child-2">
                         <i class="bi bi-check-lg"></i> 
                         FEES: N250,000 per participant.
                     </li>
-                    <li class="about-course-list-child">
+                    <li class="about-course-list-child about-course-list-child-2">
                         <i class="bi bi-check-lg"></i> 
                         DATE: 28th March - 1st April 2022 | 20th - 24th June 2022 | 26th - 30th Sept 2022 | 5th - 9th Dec 2022
                     </li>
 
-                    <li class="about-course-list-child">
+                    <li class="about-course-list-child about-course-list-child-2">
                         <i class="bi bi-check-lg"></i> 
                         MODE OF DELIVERY: Hybrid (The instructor will be present at the address listed and will also 
                         host the workshop on a collaboration software program so students can choose their preferred training method)
                     </li>
 
-                    <li class="about-course-list-child">
+                    <li class="about-course-list-child about-course-list-child-2">
                         <i class="bi bi-check-lg"></i> 
                         LOCATION: Building 7a, Oko Awo Close, Victoria Island, Lagos
                     </li>
 
-                    <li class="about-course-list-child">
+                    <li class="about-course-list-child about-course-list-child-2">
                         <i class="bi bi-check-lg"></i> 
                         DURATION: 5 days
                     </li>
@@ -556,35 +542,35 @@
     <div class="bank-slider">
         <div class="slide-track">
             <div class="slide">
-                <img src="images/bank-logos/image-6.svg" alt="">
+                <img src="../images/bank-logos/image-6.svg" alt="">
             </div>
             <div class="slide">
-                <img src="images/bank-logos/image-5.svg" alt="">
+                <img src="../images/bank-logos/image-5.svg" alt="">
             </div>
             <div class="slide">
-                <img src="images/bank-logos/image-8.svg" alt="">
+                <img src="../images/bank-logos/image-8.svg" alt="">
             </div>
             <div class="slide">
-                <img src="images/bank-logos/image-9.svg" alt="">
+                <img src="../images/bank-logos/image-9.svg" alt="">
             </div>
             <div class="slide">
-                <img src="images/bank-logos/image-7.svg" alt="">
+                <img src="../images/bank-logos/image-7.svg" alt="">
             </div>
 
             <div class="slide">
-                <img src="images/bank-logos/Heritage-Bank.svg" alt="">
+                <img src="../images/bank-logos/Heritage-Bank.svg" alt="">
             </div>
             <div class="slide">
-                <img src="images/bank-logos/image-6.svg" alt="">
+                <img src="../images/bank-logos/image-6.svg" alt="">
             </div>
             <div class="slide">
-                <img src="images/bank-logos/imagep-5.svg" alt="">
+                <img src="../images/bank-logos/image-5.svg" alt="">
             </div>
             <div class="slide">
-                <img src="images/bank-logos/image-8.svg" alt="">
+                <img src="../images/bank-logos/image-8.svg" alt="">
             </div>
             <div class="slide">
-                <img src="images/bank-logos/image-7.svg" alt="">
+                <img src="../images/bank-logos/image-7.svg" alt="">
             </div>
 
         </div>
@@ -607,7 +593,7 @@
         <div class="talent-benefits">
             <div class="talent-flex">
                 <div class="talent-item">
-                    <img src="images/talent-icons/Featured-icon.svg" alt="">
+                    <img src="../images/talent-icons/Featured-icon.svg" alt="">
                     <p class="talent-item-head">
                         Mentorship
                     </p>
@@ -618,7 +604,7 @@
                 </div>
 
                 <div class="talent-item">
-                    <img src="images/talent-icons/Featured-icon-1.svg" alt="">
+                    <img src="../images/talent-icons/Featured-icon-1.svg" alt="">
                     <p class="talent-item-head">
                         Mentorship
                     </p>
@@ -631,7 +617,7 @@
 
             <div class="talent-flex">
                 <div class="talent-item">
-                    <img src="images/talent-icons/Featured-icon-2.svg" alt="">
+                    <img src="../images/talent-icons/Featured-icon-2.svg" alt="">
                     <p class="talent-item-head">
                         Mentorship
                     </p>
@@ -642,7 +628,7 @@
                 </div>
                 
                 <div class="talent-item">
-                    <img src="images/talent-icons/Featured-icon-3.svg" alt="">
+                    <img src="../images/talent-icons/Featured-icon-3.svg" alt="">
                     <p class="talent-item-head">
                         Mentorship
                     </p>
@@ -679,30 +665,30 @@
               <div class="active">
                   <div class="author-info img">
                       <h1 class="testimonial_heading">Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.</h1>
-                      <img src="images/testimonial-img.svg" alt="" class="testimonial-image">
+                      <img src="../images/testimonial-img.svg" alt="" class="testimonial-image">
                       <p class="author">Kelly Williams</p>
                       <p class="author-role">Hiring Manager, Quotient</p>
-                      <img src="images/star-ratings.svg" alt="" class="rating">
+                      <img src="../images/star-ratings.svg" alt="" class="rating">
                   </div>
               </div>
   
               <div>
                   <div class="author-info img">
                       <h1 class="testimonial_heading">Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.</h1>
-                      <img src="images/testimonial-img.svg" alt="" class="testimonial-image">
+                      <img src="../images/testimonial-img.svg" alt="" class="testimonial-image">
                       <p class="author">Kelly Williams</p>
                       <p class="author-role">Hiring Manager, Quotient</p>
-                      <img src="images/star-ratings.svg" alt="" class="rating">
+                      <img src="../images/star-ratings.svg" alt="" class="rating">
                   </div>
               </div>
   
               <div>
                   <div class="author-info img">
                       <h1 class="testimonial_heading">Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.</h1>             
-                      <img src="images/testimonial-img.svg" alt="" class="testimonial-image">
+                      <img src="../images/testimonial-img.svg" alt="" class="testimonial-image">
                       <p class="author">Kelly Williams</p>
                       <p class="author-role">Hiring Manager, Quotient</p>
-                      <img src="images/star-ratings.svg" alt="" class="rating">
+                      <img src="../images/star-ratings.svg" alt="" class="rating">
                   </div>
               </div>
 
@@ -730,85 +716,74 @@
     </div>
 </section>
 
-    <!-- FOOTER SECTION -->
-    <section class="container">
+<!-- FOOTER SECTION -->
+<section class="container">
 
-        <div class="footer-big-flex">
-            <div class="footer-logo">
-                <img src="images/logo.svg" alt="" class="logo">
-            </div>
-            <div class="footer">
-                <div class="footer-section">
-                    <p class="footer-section_heading">
-                        Courses
-                    </p>
-                    <a href="courses.html#digital">
-                        <p class="footer-item skillbase-footer-hover">
-                                Digital Transformation
-                        </p>
-                    </a>
-                    <a href="courses.html">
-                        <p class="footer-item skillbase-footer-hover">
-                            Payment & Fintech
-                        </p>
-                    </a>
-
-                    <a href="courses.html#product">
-                        <p class="footer-item skillbase-footer-hover">
-                            Interswitch Pay Solutions
-                        </p>
-                    </a>
-                    <a href="courses.html#data-science">
-                        <p class="footer-item skillbase-footer-hover">
-                            Data Science
-                        </p>
-                    </a>
-                    <a href="courses.html#business">
-                        <p class="footer-item skillbase-footer-hover">
-                            Business Management
-                        </p>
-                    </a>
-                    <a href="courses.html#council">
-                        <p class="footer-item skillbase-footer-hover">
-                            EC Council Courses
-                        </p>
-                    </a>
-                </div>
-
-                <!-- <div class="footer-section">
-                    <p class="footer-section_heading">
-                        Resources
-                    </p>
-                    <p class="footer-item">
-                        Upcoming Webinar
-                    </p>
-                    <p class="footer-item">
-                        Articles & Insights
-                    </p>
-
-                    <p class="footer-item">
-                        Academic Calendar
-                    </p>
-                </div> -->
-
-                <div class="footer-section">
-                    <p class="footer-section_heading">
-                        Contact
-                    </p>
-                    <a href="mailto:skill_base@interswitchgroup.com">
-                    <p class="footer-item skillbase-footer-hover">
-                        skill_base@interswitchgroup.com
-                    </p>
-                    </a>
-                    <p class="footer-item">
-                       <a href="tel:+2348033302743" class="skillbase-tel">+2348033302743</a>  <br>
-                       <a href="tel:+2349023304957" class="skillbase-tel">+2349023304957</a>
-                    </p>
-                </div>
-
-            </div>
+    <div class="footer-big-flex">
+        <div class="footer-logo">
+            <img src="../images/logo.svg" alt="The skillbase logo" class="logo">
         </div>
-    </section>
+        <div class="footer">
+            <div class="footer-section">
+                <p class="footer-section_heading">
+                    Courses
+                </p>
+                <p class="footer-item">
+                    Digital Transformation
+                </p>
+                <p class="footer-item">
+                    Payment & Fintech
+                </p>
+
+                <p class="footer-item">
+                    Interswitch Pay Solutions
+                </p>
+
+                <p class="footer-item">
+                    Data Science
+                </p>
+
+                <p class="footer-item">
+                    Business Management
+                </p>
+
+                <p class="footer-item">
+                    EC Council Courses
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <p class="footer-section_heading">
+                    Resources
+                </p>
+                <p class="footer-item">
+                    Upcoming Webinar
+                </p>
+                <p class="footer-item">
+                    Articles & Insights
+                </p>
+
+                <p class="footer-item">
+                    Academic Calendar
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <p class="footer-section_heading">
+                    Contact
+                </p>
+                <p class="footer-item">
+                    skill_base@interswitchgroup.com
+                </p>
+                <p class="footer-item">
+                    +2348033302743 <br>
+                    +2349023304957
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 <script>
     const accordion = document.getElementsByClassName('drop-container');
@@ -821,10 +796,19 @@
    
 </script>
 
+<!-- <script>
+    function openForm() {
+      document.getElementById("popupForm").style.display = "block";
+    }
+    function closeForm() {
+      document.getElementById("popupForm").style.display = "none";
+    }
+</script> -->
 
-<script src="js/accordion.js"></script>
-<script src="js/slider.js"></script>
-<script src="js/course-filter.js" ></script>
+
+<script src="../js/accordion.js"></script>
+<script src="../js/slider.js"></script>
+<script src="../js/course-filter.js" ></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
