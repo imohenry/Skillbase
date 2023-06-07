@@ -713,12 +713,16 @@ Popular courses section
 
 .popular-courses-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-top: 76px;
-    width: auto;
+    width: 100%;
     flex-wrap: wrap;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.cards-container{
+    max-width: 1500px;
 }
 
 .courses-aux {
@@ -757,6 +761,11 @@ Popular courses section
     margin: 10px;
     border-radius: 8.5px;
 }
+
+
+/* .card-cont {
+    max-width: 260px;
+} */
 
 .card-1 {
    
@@ -2752,6 +2761,10 @@ RESOURCES PAGE
     color: #000;
 }
 
+.card-sizing {
+    max-width: 250px;
+}
+
 /* .single-item {
     max-width: 250px;
 } */
@@ -2975,6 +2988,18 @@ Footer style
 RESPONSIVE STYLING
 ========================*/
 
+/* @media only screen and (min-width: 922px) and (max-width: 1183px) {
+    .card{
+        width: 173px;
+    }
+ } */
+
+@media (max-width: 1259px) {
+    .card{
+        width: 215px;
+    }
+ }
+
 @media (max-width: 1248px) {
     .top-catalogue-item {
         padding: 12px 28px;
@@ -3006,6 +3031,23 @@ RESPONSIVE STYLING
     
 }
 
+@media (max-width: 1155px) {
+    .popular-courses-cards {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 1100px) {
+    .card {
+        width: 245px;
+    }
+
+    .popular-courses-cards {
+        justify-content: space-between;
+    }
+}
+
 @media (max-width: 1028px) {
     .popular-courses-cards {
         flex-wrap: wrap;
@@ -3020,6 +3062,13 @@ RESPONSIVE STYLING
     top: 33%;
     right: 4.5%;
   }
+}
+
+
+@media (max-width: 1050px) {
+    .card{
+        width: 272px;
+    }
 }
 
 @media (max-width: 991px) {
