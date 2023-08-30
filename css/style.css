@@ -216,6 +216,18 @@
   #menu-toggle {
     display: none;
   }
+
+  .menu-button-elearn,
+  .menu-button-elearn::before,
+  .menu-button-elearn::after {
+    display: block;
+    background-color:  #fff !important;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 1px;
+  }
   
   .menu-button,
   .menu-button::before,
@@ -228,6 +240,8 @@
     transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
     border-radius: 1px;
   }
+
+ 
   
   .menu-button::before {
     content: '';
@@ -244,11 +258,19 @@
     transform: rotate(405deg);
     display: none;
   }
+
+  #menu-toggle:checked + .menu-button-container .menu-button-elearn {
+    background: #fff !important;
+    transform: rotate(42deg);
+  }
+  
   
   #menu-toggle:checked + .menu-button-container .menu-button {
     background: #004250;
     transform: rotate(42deg);
   }
+
+
   
   #menu-toggle:checked + .menu-button-container .menu-button::after {
     margin-top: 0px;
@@ -295,6 +317,12 @@
 
     .aux-menu-contact {
         background-color: #D9D9D9;
+    }
+
+
+    .aux-menu-elearn {
+        background-color: #072F40;
+        padding-bottom: 0px !important;
     }
   
     .menu a {
@@ -386,6 +414,9 @@
     padding-right: 40px;
     justify-content: space-between;
   }
+  .white-item a{
+    color: #fff !important;
+  }
   .nav-item a {
     color:#00425F;
   }
@@ -441,7 +472,7 @@
     font-weight: 700;
     font-size: 50px;
     line-height: 64px;
-    max-width: 535px;;
+    max-width: 735px;
     font-family: "Averta" !important;
 
     color: #00425F;
@@ -1188,7 +1219,7 @@ Popular courses section
     vertical-align: bottom;
     width: 249px;
     padding: 16px;
-    background: rgba(0, 66, 95, 0.3);
+    background: rgba(9, 172, 241, 0.3);
     border: 1px solid rgba(0, 66, 95, 0.5);
     border-radius: 8.5px;
 
@@ -2227,7 +2258,7 @@ INDIVIDUAL COURSE section
     display: flex;
     padding-bottom: 20px;
     cursor:default !important;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .about-course-list-child-2 {
@@ -2237,6 +2268,19 @@ INDIVIDUAL COURSE section
 .about-course-list-child i {
     color: #00B8DE;
     padding-right: 12px;
+}
+
+.drop-sub-text {
+    text-decoration: dotted !important;
+    padding-left: 105px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #4E5A6C;
+}
+
+.sub-pad {
+    padding-bottom: 10px !important;
 }
 
 /* COURSE CONTENT */
@@ -2716,19 +2760,67 @@ RESOURCES PAGE
     cursor: pointer;
 }
 
-.resources-btns {
+.calendar-items {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-bottom: 50px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    /* padding-bottom: 50px; */
+}
+
+.calendar-text {
+    max-width: 422px;
+    padding-bottom: 25px;
+}
+.calendar-text h1{ 
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    padding-bottom: 25px;
+    color: #00425F;
+}
+
+.calendar-text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #9CA3AF;
+
+}
+
+.calendar-image {
+    max-width: 550px;
+}
+
+.calendar-image img {
+    width: 100%;
+    border-radius: 8px;
 }
 
 .resources-cont {
-    /* display: flex; */
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
     gap: 40px;
+    align-items: center;
+    padding-bottom: 78px;
 }
 
+.mailing-text {
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    color: #374151 !important;
+    padding-top: 24px;
+}
+
+.mailing-text a{ 
+    color: #00425F !important;
+    text-decoration: none;
+}
+
+/* ARTICLES SECTION */
 .articles-flex {
     display: flex;
     gap: 30px;
@@ -2769,6 +2861,170 @@ RESOURCES PAGE
     max-width: 250px;
 } */
 
+
+/* ==============
+Faculty style
+=================*/
+
+.faculty_members-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.single-member {
+    max-width: 277px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  padding-bottom: 48px;
+}
+
+.single-member:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+.faculty-member-image {
+width: 100%;
+}
+
+.member-text{
+    max-width: 241.33px;
+}
+
+.member-text-heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+
+    color: #374151;
+}
+
+.member-text-heading i{ 
+    float: right;
+}
+
+
+.member-sub-text{
+    font-size: 14px;
+    line-height: 20px;
+    color: #4B5563;
+    padding-bottom: 8px;
+}
+
+.member-sub-text2{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9CA3AF;
+}
+
+.blur-effect {
+    filter: blur(48px);
+  -webkit-filter: blur(48px);
+
+}
+
+/* =================
+    ELEARNING PAGE 
+==================*/
+
+
+.learning_bg{
+    background: url("../images/elearning-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    align-self: start;
+}
+
+.video_and_side-bar_flex {
+    display: flex;
+    padding-top: 60px;
+    justify-content: space-between;
+}
+
+.elearning_hero_text {
+    max-width: 593px;
+    color: #FFF;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.elearning_hero_text p{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    line-height: normal;
+}
+
+/* Side bar */
+
+.side-bar {
+    background: #FFF;
+    width: auto;
+    border: 1px solid #AEDDF1;
+    position: sticky;
+    top: 19px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px #AEDDF1;
+
+}
+.side-bar_content {
+    padding: 15px 25px;
+    text-align: left;
+}
+.price {
+    color: #000;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    padding-bottom: 15px;
+}
+.enroll_btn {
+    display: block;
+    background-color: #00425F;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 10px 18px;
+    text-align: center;
+    margin-bottom: 30px;
+    /* width: min-content !important; */
+}
+
+.side-bar-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    color: #00425F;
+    line-height: 20px;
+}
+.down-pad {
+    padding-bottom: 40px;
+}
+
+.side-bar-item-pad {
+    padding-bottom: 22px;
+}
+
+/* Video section */
+  .video-container {
+    max-width: 990px;
+    margin: 0 auto;
+   
+  }
+
+  .video-container video{ 
+    border-radius: 10px;
+  }
+ 
 
 /* ==============
 Footer style
@@ -2994,6 +3250,8 @@ RESPONSIVE STYLING
     }
  } */
 
+
+
 @media (max-width: 1259px) {
     .card{
         width: 215px;
@@ -3158,6 +3416,15 @@ RESPONSIVE STYLING
         line-height: 47px;
       }
 
+      .video_and_side-bar_flex {
+        flex-direction: column-reverse;
+      }
+
+      /* .side-bar_content {
+        display: flex;
+        flex-wrap: wrap;
+      } */
+
       /* Form modal */
 
       .loginPopup {
@@ -3186,6 +3453,30 @@ RESPONSIVE STYLING
         padding: 22px 23px;
         background-color: #fff;
         border-radius: 12px;
+        }
+
+        .resources-cont {
+            flex-direction: column;
+        }
+
+        .calendar-items {
+            align-items: center;
+            text-align: center !important;
+        }
+
+        .calendar-image {
+            max-width: 450px;
+        }
+
+        .training-flex {
+            flex-direction: column-reverse;
+        }
+
+        .calendar-btn {
+            padding: 16px 23px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
         }
 
 }
@@ -3243,12 +3534,19 @@ RESPONSIVE STYLING
         height: 630px;
     }
 
+    .faculty_members-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
 
 @media (max-width: 600px) {
     .heading_visibility {
         display: none;
     }
+
 
    
 }
@@ -3363,6 +3661,15 @@ RESPONSIVE STYLING
         text-align: left;
     }
 
+    .child-pad {
+        padding-left: 5px;
+        padding-bottom: 20px;
+    }
+
+    .drop-sub-text {
+        padding-left: 57px ;
+    }
+
 }
 
 @media (min-width: 395px) and (max-width: 460px) {
@@ -3400,6 +3707,10 @@ RESPONSIVE STYLING
 
     .contact-info_small-text a  {
         font-size: 19px;
+    }
+
+    .calendar-btn {
+        font-size: 13px;
     }
 
 }
