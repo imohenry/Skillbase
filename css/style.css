@@ -411,7 +411,7 @@
   .nav-item {
     color:#00425F;
     font-size: 16px;
-    padding-right: 40px;
+    padding-right: 30px;
     justify-content: space-between;
   }
   .white-item a{
@@ -497,8 +497,19 @@
     line-height: 24px;
   }
 
+  .banner-btn-2 {
+    background-color: #fff;
+    padding: 16px 34px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-weight: 700;
+    color: #00425F;
+  }
+
   .banner-btn-container {
     padding-top: 44px;
+    display: flex;
+    gap: 20px;
   }
 
   .explore-text {
@@ -3024,7 +3035,79 @@ width: 100%;
   .video-container video{ 
     border-radius: 10px;
   }
- 
+
+/* ==============
+Terms and conditions style
+=================*/
+ .terms_banner {
+    background: url("../images/T&C-banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+
+ .terms_text {
+    padding: 120px 0;
+    color: #fff;
+ }
+
+ .terms_text h1{ 
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+ }
+
+ .terms_text h3{ 
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+ }
+
+ .terms_body_text {
+    color: #00425F;
+ }
+
+ .terms_body_text p{ 
+    font-size: 18px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+ }
+
+ .opening_text {
+    padding-bottom: 37px;
+    padding-top: 40px;
+ }
+
+ .privacy_style {
+    color: #00425F;
+    text-decoration: underline !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+ }
+
+ .main_terms h2 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+ }
+
+ .main_terms {
+    max-width: 920px;
+    padding-top: 60px;
+ }
+
+ .main_terms p {
+    padding-top: 29px;
+ }
+
+ .deloitte_contact li{
+    padding: 10px 0;
+ }
 
 /* ==============
 Footer style
@@ -3075,6 +3158,20 @@ Footer style
 
 .skillbase-tel:hover {
     color: #DC4437 !important;
+}
+
+.cbn-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.cbn-flex img{ 
+    width: 32px;
+    height: 42px;
+    object-fit: contain;
+    margin-right: 14px;
 }
 
 /* Responsive cards */
@@ -3634,12 +3731,12 @@ RESPONSIVE STYLING
     .hero-section {
         background: url("../images/Hero-image-responsive.png");
         background-size: cover;
-        height: 650px;
+        height: 700px;
     }
 
     .hero-text h1 {
         font-weight: 700;
-        font-size: 40px;
+        font-size: 32px;
     }
 
     .hero-text {
@@ -3668,6 +3765,24 @@ RESPONSIVE STYLING
 
     .drop-sub-text {
         padding-left: 57px ;
+    }
+
+    .banner-btn-container {
+        padding-top: 44px;
+        display: flex;
+        gap: 20px;
+        text-align: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .terms_text h1 {
+        font-size: 33px;
+        line-height: 35px;
+    }
+
+    .terms_text h3 {
+        font-size: 21px;
     }
 
 }
